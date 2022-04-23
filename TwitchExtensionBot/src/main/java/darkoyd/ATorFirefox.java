@@ -24,7 +24,7 @@ public class ATorFirefox {
     try {
 
       // Config file load
-      is = new FileInputStream("config.properties");
+      is = new FileInputStream("ArchivoOficialTwitch-main/TwitchExtensionBot/config.properties");
       props = new Properties();
       props.load(is);
       System.out.println("Config file loaded correctly!");
@@ -62,7 +62,7 @@ public class ATorFirefox {
   // JSON reader method
   private static JSONObject readAccountJSON() throws IOException, ParseException {
     JSONParser parser = new JSONParser();
-    FileReader reader = new FileReader("accounts.json");
+    FileReader reader = new FileReader("ArchivoOficialTwitch-main/TwitchExtensionBot/accounts.json");
     Object obj = parser.parse(reader);
     JSONObject accountJSON = (JSONObject) obj;
     return accountJSON;
